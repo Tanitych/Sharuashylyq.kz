@@ -21,7 +21,7 @@ window.onclick = function (event) {
             }
         }
     }
-}
+};
 
 
 
@@ -31,6 +31,32 @@ $('.sing__in__button').click(function (event) {
 });
 
 
+
+$(document).ready(function () {
+    $('.slider').slick({
+        arrows: true,
+        dots: false,
+        slidesToShow: 2,
+        autoplay: false,
+        speed: 1000,
+        autoplaySpeed: 800,
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
 
 
 
