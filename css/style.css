@@ -1504,25 +1504,26 @@ footer {
       text-align: center;
       margin: 0px 0px 10px 0px; } }
 
-@media (max-width: 767px) {
-  .footer__down__bc__promo {
-    margin: 17px 0px 0px 0px; } }
-
-.footer__down__bc__promo a {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 100%;
-  color: #000000; }
-  .footer__down__bc__promo a span {
-    font-weight: bold; }
+.footer__down__bc__promo {
+  text-align: end; }
+  @media (max-width: 767px) {
+    .footer__down__bc__promo {
+      margin: 17px 0px 0px 0px; } }
+  .footer__down__bc__promo a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000000; }
+    .footer__down__bc__promo a span {
+      font-weight: bold; }
 
 /*MAIN__RUBRIC*/
 .main__rubric {
   padding: 105px 0px 0px 0px; }
   @media (max-width: 991px) {
     .main__rubric {
-      padding: 65px 0px 0px 0px; } }
+      padding: 50px 0px 0px 0px; } }
   .main__rubric .scroll__news {
     min-width: 275px; }
     @media (max-width: 991px) {
@@ -1536,7 +1537,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px 0px 30px 0px; }
+  margin: 0px 0px 20px 0px;
+  border-bottom: 1px solid #5f903b; }
   @media (max-width: 768px) {
     .main__rubric__block {
       -webkit-box-orient: vertical;
@@ -1576,10 +1578,7 @@ footer {
   margin: 0px 25px 35px 0px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
-  padding: 15px 20px 25px 20px; }
+  justify-content: space-between; }
   @media (max-width: 991px) {
     .main__rubric__content {
       margin: 0px 15px 35px 0px; } }
@@ -1699,6 +1698,14 @@ footer {
       height: 36px; }
 
 /*single__news*/
+.single__news .main__rubric__content {
+  padding: 15px 20px 25px 20px;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05); }
+  @media (max-width: 420px) {
+    .single__news .main__rubric__content {
+      padding: 15px 10px 25px 10px; } }
+
 .single__news .main__rubric__title {
   margin: 0px 0px 13px 0px; }
 
@@ -1727,7 +1734,7 @@ footer {
     font-size: 18px;
     line-height: 135%;
     color: #000000;
-    width: 81%;
+    width: 84%;
     margin: 0px 0px 10px 0px; }
     @media (max-width: 991px) {
       .single__news__text p {
@@ -1793,3 +1800,72 @@ footer {
       .single__news__social .single__news__social__items a img {
         width: 100%;
         height: 100%; }
+
+/*CONTACTS*/
+.contacts {
+  margin: 105px 0px 0px 0px; }
+  @media (max-width: 991px) {
+    .contacts {
+      margin: 70px 0px 0px 0px; } }
+
+.contacts__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  color: #000000;
+  margin: 0px 0px 25px 0px; }
+
+.contacts__back {
+  background: url(../img/contacts/contacts__background.jpg) no-repeat center;
+  background-size: cover;
+  padding: 70px 0px; }
+
+.contacts__block {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px 30px 35px 30px;
+  max-width: 370px;
+  max-height: 275px; }
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 25px 0px; }
+  .contacts__item .img {
+    margin: 0px 7px 0px 0px; }
+  .contacts__item .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000; }
+    .contacts__item .text p {
+      font-size: 15px; }
+    .contacts__item .text span {
+      font-weight: bold; }
+
+/*ABOUT__US*/
+.about__us {
+  margin: 0px 0px 45px 0px; }
+  .about__us .contacts__title {
+    margin: 0px 0px 14px 0px; }
+  .about__us .about__us__subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000000;
+    margin: 0px 0px 10px 0px; }
+
+.about__us__content p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: #000000;
+  max-width: 770px;
+  margin: 0px 0px 13px 0px; }
+  @media (max-width: 420px) {
+    .about__us__content p {
+      margin: 0px 0px 8px 0px; } }
