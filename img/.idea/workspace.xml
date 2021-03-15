@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e2ee90-8c59-497f-bc41-e0c4ee49c211" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../#source/index.kit" beforeDir="false" afterPath="$PROJECT_DIR$/../#source/index.kit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../#source/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../#source/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -40,7 +42,25 @@
       <option name="presentableId" value="Default" />
       <updated>1615710593861</updated>
       <workItem from="1615710598158" duration="7000" />
+      <workItem from="1615816283471" duration="2163000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Deployment" timestamp="1615816390343">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1615816390343" />
+    <state x="345" y="58" key="#SSH_Configurations" timestamp="1615816372986">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="345" y="58" key="#SSH_Configurations/0.0.1536.824@0.0.1536.824" timestamp="1615816372986" />
+    <state x="594" y="143" key="ftp.server.browser" timestamp="1615816387941">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="594" y="143" key="ftp.server.browser/0.0.1536.824@0.0.1536.824" timestamp="1615816387941" />
   </component>
 </project>
