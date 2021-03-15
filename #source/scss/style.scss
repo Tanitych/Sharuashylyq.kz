@@ -1462,6 +1462,9 @@ footer {
   @media (max-width: 767px) {
     grid-template-columns: 2fr 2fr;
   }
+  @media (max-width: 420px) {
+    grid-template-columns: 1fr;
+  }
 }
 .footer__down__link {
   font-style: normal;
@@ -1470,7 +1473,10 @@ footer {
   line-height: 100%;
   color: #000000;
   margin: 0px 15px 10px 0px;
-  @media (max-width: 767px) {
+  @media (min-width: 768px) {
+    white-space: nowrap;
+  }
+  @media (max-width: 768px) {
     text-align: center;
     margin: 0px 0px 10px 0px;
   }
@@ -1495,20 +1501,40 @@ footer {
 
 .main__rubric {
   padding: 105px 0px 0px 0px;
+  @media (max-width: 991px) {
+    padding: 65px 0px 0px 0px;
+  }
   .scroll__news {
     min-width: 275px;
+    @media (max-width: 991px) {
+      min-width: 265px;
+    }
+  }
+  .single__rubric__item .img img {
+    min-width: 130px;
+    max-height: 140px;
   }
 }
 .main__rubric__block {
   display: flex;
+  margin: 0px 0px 30px 0px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 .grid__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
   row-gap: 20px;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr 1fr;
+  }
   @media (max-width: 1200px) {
     column-gap: 15px;
+  }
+  @media (max-width: 620px) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1517,6 +1543,17 @@ footer {
   flex-direction: column;
   margin: 0px 25px 35px 0px;
   justify-content: space-between;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 15px 20px 25px 20px;
+  @media (max-width: 991px) {
+    margin: 0px 15px 35px 0px;
+  }
+  @media (max-width: 768px) {
+    margin: 0px 0px 35px 0px;
+  }
+  @media (max-width: 420px) {
+    padding: 15px 10px 25px 10px;
+  }
 }
 
 .bread__crumps {
@@ -1548,6 +1585,9 @@ footer {
   letter-spacing: 0.02em;
   color: #000000;
   margin: 0px 0px 17px 0px;
+  @media (max-width: 420px) {
+    font-size: 18px;
+  }
 }
 
 /*TABS*/
@@ -1607,5 +1647,117 @@ footer {
     }
   }
   .tabs__center__item {
+  }
+}
+
+/*single__news*/
+
+.single__news {
+  .main__rubric__title {
+    margin: 0px 0px 13px 0px;
+  }
+  .scroll__news__item__info.bb_reset {
+    margin: 0px 0px 10px 0px;
+  }
+}
+
+.single__news__content {
+  .img {
+    position: relative;
+    padding: 25%;
+    max-height: 400px;
+    margin: 0px 0px 17px 0px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+}
+
+.single__news__text {
+  margin: 0px 0px 22px 0px;
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 135%;
+    color: #000000;
+    width: 81%;
+    margin: 0px 0px 10px 0px;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+    @media (max-width: 767px) {
+      margin: 0px 0px 6px 0px;
+    }
+  }
+}
+
+.single__news__social {
+  display: flex;
+  align-items: center;
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #9c9c9c;
+    margin: 0px 13px 0px 0px;
+    @media (max-width: 420px) {
+      margin: 0px 7px 0px 0px;
+    }
+  }
+  .single__news__social__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+      margin: 0px 17px 0px 0px;
+      display: block;
+      width: 34px;
+      height: 34px;
+      @media (max-width: 420px) {
+        margin: 0px 7px 0px 0px;
+      }
+      &:nth-child(1) {
+        background: url(../img/single__news/icons/Facebook__grey.svg) no-repeat;
+        &:hover {
+          background: url(../img/icons/Facebook.svg) no-repeat;
+        }
+      }
+      &:nth-child(2) {
+        background: url(../img/single__news/icons/Vk__grey.svg) no-repeat;
+        &:hover {
+          background: url(../img/icons/Vk.svg) no-repeat;
+        }
+      }
+      &:nth-child(3) {
+        background: url(../img/single__news/icons/WhatsApp__grey.svg) no-repeat;
+        &:hover {
+          background: url(../img/icons/WhatsApp.svg) no-repeat;
+        }
+      }
+      &:nth-child(4) {
+        background: url(../img/single__news/icons/Telegram__grey.svg) no-repeat;
+        &:hover {
+          background: url(../img/icons/Telegram.svg) no-repeat;
+        }
+      }
+      &:nth-child(5) {
+        background: url(../img/single__news/icons/Twitter__grey.svg) no-repeat;
+        &:hover {
+          background: url(../img/icons/Twitter.svg) no-repeat;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }

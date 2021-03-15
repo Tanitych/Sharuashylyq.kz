@@ -1484,6 +1484,10 @@ footer {
     .footer__down__content {
       -ms-grid-columns: 2fr 2fr;
       grid-template-columns: 2fr 2fr; } }
+  @media (max-width: 420px) {
+    .footer__down__content {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
 
 .footer__down__link {
   font-style: normal;
@@ -1492,7 +1496,10 @@ footer {
   line-height: 100%;
   color: #000000;
   margin: 0px 15px 10px 0px; }
-  @media (max-width: 767px) {
+  @media (min-width: 768px) {
+    .footer__down__link {
+      white-space: nowrap; } }
+  @media (max-width: 768px) {
     .footer__down__link {
       text-align: center;
       margin: 0px 0px 10px 0px; } }
@@ -1513,13 +1520,29 @@ footer {
 /*MAIN__RUBRIC*/
 .main__rubric {
   padding: 105px 0px 0px 0px; }
+  @media (max-width: 991px) {
+    .main__rubric {
+      padding: 65px 0px 0px 0px; } }
   .main__rubric .scroll__news {
     min-width: 275px; }
+    @media (max-width: 991px) {
+      .main__rubric .scroll__news {
+        min-width: 265px; } }
+  .main__rubric .single__rubric__item .img img {
+    min-width: 130px;
+    max-height: 140px; }
 
 .main__rubric__block {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: 0px 0px 30px 0px; }
+  @media (max-width: 768px) {
+    .main__rubric__block {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .grid__container {
   display: -ms-grid;
@@ -1529,10 +1552,18 @@ footer {
   -webkit-column-gap: 25px;
   column-gap: 25px;
   row-gap: 20px; }
+  @media (max-width: 767px) {
+    .grid__container {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; } }
   @media (max-width: 1200px) {
     .grid__container {
       -webkit-column-gap: 15px;
       column-gap: 15px; } }
+  @media (max-width: 620px) {
+    .grid__container {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
 
 .main__rubric__content {
   display: -webkit-box;
@@ -1545,7 +1576,19 @@ footer {
   margin: 0px 25px 35px 0px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 15px 20px 25px 20px; }
+  @media (max-width: 991px) {
+    .main__rubric__content {
+      margin: 0px 15px 35px 0px; } }
+  @media (max-width: 768px) {
+    .main__rubric__content {
+      margin: 0px 0px 35px 0px; } }
+  @media (max-width: 420px) {
+    .main__rubric__content {
+      padding: 15px 10px 25px 10px; } }
 
 .bread__crumps {
   display: -webkit-box;
@@ -1577,6 +1620,9 @@ footer {
   letter-spacing: 0.02em;
   color: #000000;
   margin: 0px 0px 17px 0px; }
+  @media (max-width: 420px) {
+    .main__rubric__title {
+      font-size: 18px; } }
 
 /*TABS*/
 .main__block__left__content__tabs {
@@ -1651,3 +1697,99 @@ footer {
       padding: 2px 2px;
       width: 36px;
       height: 36px; }
+
+/*single__news*/
+.single__news .main__rubric__title {
+  margin: 0px 0px 13px 0px; }
+
+.single__news .scroll__news__item__info.bb_reset {
+  margin: 0px 0px 10px 0px; }
+
+.single__news__content .img {
+  position: relative;
+  padding: 25%;
+  max-height: 400px;
+  margin: 0px 0px 17px 0px; }
+  .single__news__content .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.single__news__text {
+  margin: 0px 0px 22px 0px; }
+  .single__news__text p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 135%;
+    color: #000000;
+    width: 81%;
+    margin: 0px 0px 10px 0px; }
+    @media (max-width: 991px) {
+      .single__news__text p {
+        width: 100%; } }
+    @media (max-width: 767px) {
+      .single__news__text p {
+        margin: 0px 0px 6px 0px; } }
+
+.single__news__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .single__news__social p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #9c9c9c;
+    margin: 0px 13px 0px 0px; }
+    @media (max-width: 420px) {
+      .single__news__social p {
+        margin: 0px 7px 0px 0px; } }
+  .single__news__social .single__news__social__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .single__news__social .single__news__social__items a {
+      margin: 0px 17px 0px 0px;
+      display: block;
+      width: 34px;
+      height: 34px; }
+      @media (max-width: 420px) {
+        .single__news__social .single__news__social__items a {
+          margin: 0px 7px 0px 0px; } }
+      .single__news__social .single__news__social__items a:nth-child(1) {
+        background: url(../img/single__news/icons/Facebook__grey.svg) no-repeat; }
+        .single__news__social .single__news__social__items a:nth-child(1):hover {
+          background: url(../img/icons/Facebook.svg) no-repeat; }
+      .single__news__social .single__news__social__items a:nth-child(2) {
+        background: url(../img/single__news/icons/Vk__grey.svg) no-repeat; }
+        .single__news__social .single__news__social__items a:nth-child(2):hover {
+          background: url(../img/icons/Vk.svg) no-repeat; }
+      .single__news__social .single__news__social__items a:nth-child(3) {
+        background: url(../img/single__news/icons/WhatsApp__grey.svg) no-repeat; }
+        .single__news__social .single__news__social__items a:nth-child(3):hover {
+          background: url(../img/icons/WhatsApp.svg) no-repeat; }
+      .single__news__social .single__news__social__items a:nth-child(4) {
+        background: url(../img/single__news/icons/Telegram__grey.svg) no-repeat; }
+        .single__news__social .single__news__social__items a:nth-child(4):hover {
+          background: url(../img/icons/Telegram.svg) no-repeat; }
+      .single__news__social .single__news__social__items a:nth-child(5) {
+        background: url(../img/single__news/icons/Twitter__grey.svg) no-repeat; }
+        .single__news__social .single__news__social__items a:nth-child(5):hover {
+          background: url(../img/icons/Twitter.svg) no-repeat; }
+      .single__news__social .single__news__social__items a img {
+        width: 100%;
+        height: 100%; }
