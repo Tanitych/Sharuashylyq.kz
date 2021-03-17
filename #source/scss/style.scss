@@ -188,7 +188,7 @@ h4 {
 }
 .header__list li {
   list-style: none;
-  margin: 0px 40px 0px 0px;
+  margin: 0px 35px 0px 0px;
   @media (max-width: 1200px) {
     margin: 0px 5px 0px 20px;
   }
@@ -220,6 +220,7 @@ h4 {
   }
   @media (max-width: 767px) {
     display: flex;
+    align-items: center;
   }
 }
 .header__menu.active {
@@ -227,7 +228,7 @@ h4 {
 }
 .header__menu {
   position: fixed;
-  right: -100%;
+  right: -104%;
   top: 0;
   width: 400px;
   height: 100%;
@@ -235,7 +236,7 @@ h4 {
   transition: all 0.5s ease 0s;
   background-color: #fff;
   box-shadow: -2px 0px 13px #00000059;
-  padding: 27px 10px 20px 25px;
+  padding: 20px 10px 20px 25px;
   z-index: 3;
   scrollbar-color: #00000056 #fff; /* «цвет ползунка» «цвет полосы скроллбара» */
   scrollbar-width: thin;
@@ -248,12 +249,15 @@ h4 {
     height: 10px;
     background-color: #00000056;
   }
+  @media (max-width: 991px) {
+    padding: 12px 10px 20px 16px;
+  }
   @media (max-width: 480px) {
     width: 100%;
-    padding: 18px 10px 20px 17px;
+    padding: 12px 10px 20px 16px;
   }
   @media (max-width: 400px) {
-    padding: 18px 10px 20px 17px;
+    padding: 12px 10px 20px 16px;
   }
 }
 .cross {
@@ -380,7 +384,7 @@ h4 {
 .header__menu__language {
   display: flex;
   align-items: center;
-  margin: 0px 10px 5px 10px;
+  margin: 0px 10px 0px 10px;
   cursor: pointer;
 }
 .drop__language {
@@ -391,7 +395,7 @@ h4 {
     font-size: 16px;
     line-height: 120%;
     color: #fff;
-    width: 48px;
+    width: 41px;
   }
   display: flex;
   align-items: center;
@@ -504,15 +508,26 @@ header .header__menu__singin .sing_in {
   cursor: pointer;
 }
 .search__header {
-  background-color: #3baa36;
-  color: #fff;
+  background-color: #fff;
+  color: #929292;
+  border-radius: 3px;
   border-bottom: 1px solid #fff;
-  padding: 5px 10px 1px 3px;
-  margin: 0px 12px 0px 0px;
-  width: 90px;
+  padding: 5px 10px 3px 5px;
+  margin: 0px 4px 0px 0px;
+  width: 150px;
+
+  @media (max-width: 1200px) {
+    width: 145px;
+  }
+  @media (max-width: 1045px) {
+    width: 123px;
+  }
+  @media (max-width: 991px) {
+    width: 150px;
+  }
 }
 .search__header::placeholder {
-  color: #fff;
+  color: #929292;
 }
 
 @media (max-width: 991px) {
@@ -540,6 +555,7 @@ header .header__menu__singin .img {
 
 .lang__singin {
   display: flex;
+  align-items: center;
 }
 
 .header__content {
@@ -582,8 +598,20 @@ header .header__menu__singin .img {
   justify-content: flex-start;
   width: 70%;
   margin: 0px 0px 25px 0px;
+  @media (max-width: 420px) {
+    margin: 0px 0px 20px 0px;
+  }
   .logo__img {
     margin: 0px 50px 0px 0px;
+    img {
+      max-width: 100%;
+      min-width: 189px;
+      @media (max-width: 480px) {
+        min-width: unset;
+        max-width: 177px;
+        min-width: 177px;
+      }
+    }
     @media (max-width: 480px) {
       margin: 0px 30px 0px 0px;
     }
@@ -729,8 +757,16 @@ header .header__menu__singin .img {
     color: #222222;
     margin: 0px 0px 10px 0px;
     transition: all ease 0.3s;
+    overflow: hidden;
     &:hover {
       color: #5f903b;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+      max-height: 38px;
+    }
+    @media (max-width: 420px) {
+      font-size: 15px;
     }
   }
 }
@@ -743,6 +779,9 @@ header .header__menu__singin .img {
   color: #9c9c9c;
   border-bottom: 1.5px solid #f3f3f3;
   padding: 0px 0px 9px 0px;
+  @media (max-width: 420px) {
+    font-size: 13px;
+  }
   &.bb_reset {
     border-bottom: unset;
   }
@@ -874,7 +913,6 @@ header .header__menu__singin .img {
 .faund__right__content {
   position: absolute;
   bottom: 0;
-
   &.main {
     padding: 10px 18px;
 
@@ -1060,9 +1098,12 @@ header .header__menu__singin .img {
   }
   .faund__right__content.main a {
     @media (max-width: 420px) {
-      font-size: 17px;
+      font-size: 16px;
     }
     font-size: 20px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   .faund__right__content.main a {
@@ -1081,7 +1122,7 @@ header .header__menu__singin .img {
   padding: 20px 0px 0px 0px;
 
   @media (max-width: 420px) {
-    padding: 20px 0px 15px 0px;
+    padding: 20px 0px 7px 0px;
   }
 }
 
@@ -1173,9 +1214,13 @@ header .header__menu__singin .img {
   margin: 0px 0px 10px 0px;
   max-height: 72px;
   overflow: hidden;
-  @media (max-width: 420px) {
+  @media (max-width: 768px) {
     font-size: 18px;
-    max-height: 66px;
+    max-height: 70px;
+  }
+  @media (max-width: 420px) {
+    font-size: 15px;
+    max-height: 56px;
   }
 }
 
@@ -1201,9 +1246,14 @@ header .header__menu__singin .img {
     margin: 0px 0px 10px 0px;
     max-height: 70px;
     overflow: hidden;
+    @media (max-width: 768px) {
+      font-size: 22px;
+      max-height: 54px;
+    }
     @media (max-width: 420px) {
-      font-size: 25px;
+      font-size: 17px;
       margin: 0px 0px 5px 0px;
+      max-height: 43px;
     }
   }
 }
@@ -1277,6 +1327,9 @@ header .header__menu__singin .img {
       column-gap: 10px;
       row-gap: 10px;
     }
+    @media (max-width: 420px) {
+      grid-template-columns: 1fr 2fr;
+    }
   }
 }
 
@@ -1289,9 +1342,13 @@ header .header__menu__singin .img {
   margin: 0px 0px 10px 0px;
   max-height: 54px;
   overflow: hidden;
-  @media (max-width: 420px) {
+  @media (max-width: 768px) {
     font-size: 17px;
-    max-height: 34px;
+    max-height: 52px;
+  }
+  @media (max-width: 420px) {
+    font-size: 15px;
+    max-height: 31px;
     margin: 0px 0px 7px 0px;
   }
 }
@@ -1304,9 +1361,13 @@ header .header__menu__singin .img {
   margin: 0px 0px 10px 0px;
   max-height: 48px;
   overflow: hidden;
-  @media (max-width: 420px) {
+  @media (max-width: 768px) {
     font-size: 15px;
-    max-height: 32px;
+    max-height: 46px;
+  }
+  @media (max-width: 420px) {
+    font-size: 13px;
+    max-height: 26px;
     margin: 0px 0px 7px 0px;
   }
 }
@@ -1370,11 +1431,18 @@ header .header__menu__singin .img {
     padding: 0px 5px 0px 0px;
     max-height: 37px;
     overflow: hidden;
+    @media (max-width: 420px) {
+      font-size: 15px;
+      max-height: 31px;
+    }
   }
 }
 
 .block__4 {
   margin: 0px 0px 30px 0px;
+  @media (max-width: 767px) {
+    margin: 0px 0px 3px 0px;
+  }
 }
 .block__4__content {
   border-top: 1px solid #5f903b;
