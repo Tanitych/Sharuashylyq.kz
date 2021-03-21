@@ -203,8 +203,24 @@ h4 {
   text-transform: capitalize;
   font-family: "Lato";
   color: #fbfbfb;
+  transition: all ease 0.3s;
   @media (max-width: 1200px) {
     font-size: 16px;
+  }
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    background-color: #fff;
+    height: 1px;
+    left: 50%;
+    bottom: -3px;
+    transition: all ease 0.3s;
+  }
+  &:hover:after {
+    width: 100%;
+    left: 0;
   }
 }
 .sing__lang__adapted {
@@ -581,7 +597,22 @@ header .header__menu__singin .img {
           font-size: 18px;
           line-height: 100%;
           color: #000000;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            background-color: #000;
+            height: 1px;
+            left: 50%;
+            bottom: -3px;
+            transition: all ease 0.3s;
+          }
+          &:hover:after {
+            width: 100%;
+            left: 0;
+          }
         }
+        transition: all ease 0.3s;
       }
     }
   }
@@ -862,6 +893,10 @@ header .header__menu__singin .img {
 
 .main__news__up__faund__cnt {
   width: 100%;
+  transition: all ease 0.3s;
+  :hover .faund__right__content.main a {
+    color: #6fc56b;
+  }
 }
 .faund__right {
   position: relative;
@@ -906,6 +941,10 @@ header .header__menu__singin .img {
         max-height: 32px;
         overflow: hidden;
       }
+    }
+    transition: all ease 0.3s;
+    &:hover .faund__right__content a {
+      color: #6fc56b;
     }
   }
 }
@@ -966,6 +1005,10 @@ header .header__menu__singin .img {
       min-height: 63px;
       overflow: hidden;
     }
+  }
+  transition: all ease 0.3s;
+  &:hover .main__news__down__item {
+    color: #2f962b;
   }
 }
 
@@ -1097,6 +1140,7 @@ header .header__menu__singin .img {
   .slider__item.slick-center {
   }
   .faund__right__content.main a {
+    transition: all ease 0.3s;
     @media (max-width: 420px) {
       font-size: 16px;
     }
@@ -1108,6 +1152,7 @@ header .header__menu__singin .img {
 
   .faund__right__content.main a {
     max-height: 75px;
+    transition: all ease 0.3s;
   }
   .faund__right {
     &:active .img::after {
